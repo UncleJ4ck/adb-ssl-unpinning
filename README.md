@@ -1,6 +1,6 @@
 # adb-ssl-unpinning
 
-Automated script to disable SSL certificate pinning without root using adb.
+Automated script to disable SSL certificate pinning without root using adb for applications that uses V1,2,3 and 4 Design scheme
 
 ## Usage
 
@@ -20,6 +20,11 @@ Example:
 $ python3 adb-ssl-unpinning.py emulator-5554 com.example
 ```
 
+You can also use docker with it
+
+```
+docker build -t 
+```
 ## Find device serial
 
 Connect your device to your computer and run `adb usb` to enable USB debugging, or use an emulator.
