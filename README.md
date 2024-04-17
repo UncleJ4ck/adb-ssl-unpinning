@@ -23,7 +23,9 @@ $ python3 adb-ssl-unpinning.py emulator-5554 com.example
 You can also use docker with it
 
 ```
-docker build -t 
+docker build -t adb-ssl-unpinning .
+adb kill-server
+docker run -it --rm --privileged -v /dev/bus/usb:/dev/bus/usb --name adb-tool adb-ssl-unpinning <serial> <package>
 ```
 ## Find device serial
 
